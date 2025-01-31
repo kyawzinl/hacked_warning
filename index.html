@@ -19,7 +19,7 @@
         }
 
         h1 {
-            font-size: 8vw; /* Responsive font size */
+            font-size: 8vw;
             color: red;
             text-shadow: 2px 2px 10px red;
             animation: glitch 0.8s infinite alternate;
@@ -32,16 +32,18 @@
             100% { text-shadow: 2px 2px 10px red; }
         }
 
+        /* ✅ UPDATED RESPONSIVE IMAGE STYLES */
         #hacker-mask {
-            width: 50vw; /* Make it responsive */
-            max-width: 200px; /* Prevent it from being too big */
+            width: 60vw; /* Make it responsive */
+            max-width: 250px; /* Prevent it from being too big */
+            height: auto; /* Maintain aspect ratio */
             opacity: 0.8;
             margin-top: 20px;
             animation: fadeIn 2s forwards;
         }
 
         #warning {
-            font-size: 4vw; /* Adjust font size for smaller screens */
+            font-size: 4vw;
             max-width: 90%;
             margin: 20px auto;
             opacity: 0;
@@ -76,6 +78,7 @@
 </head>
 <body>
     <h1>YOU HAVE BEEN HACKED</h1>
+    <img id="hacker-mask" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHl3amx2Y3huN2kwbzdnNDF0czB5cWs0b2gwbG96d3NjNnZwcjdidSZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9Zw/jmS6emKfUZXbO88P00/giphy.gif" alt="Anonymous Hacker Mask">
     <p id="warning">You shouldn't scan every QR code you see and give out information easily.</p>
     <p id="message"></p>
 
@@ -89,8 +92,7 @@
                 setTimeout(typeWriter, 100);
             }
         }
-        setTimeout(typeWriter, 4000); // Starts after 4 seconds
+        setTimeout(typeWriter, 4000);
     </script>
-    <img id="hacker-mask" src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExOHl3amx2Y3huN2kwbzdnNDF0czB5cWs0b2gwbG96d3NjNnZwcjdidSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jmS6emKfUZXbO88P00/giphy.gif" alt="Anonymous Hacker Mask">
 </body>
 </html>
